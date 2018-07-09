@@ -14,9 +14,9 @@ function addToCart(item) {
  var items = {};
  //random number 1 - 100
  var price = Math.floor(Math.random() * 99) + 1;
- console.log(price);
- //Object.assign(items, { 'itemName : ${item}, itemPrice: ${price}'})
- //cart.push(items);
+ 
+ Object.assign(items, 'itemName : ${item}', 'itemPrice: ${price}'})
+ cart.push(items);
 }
 
 function viewCart() {
