@@ -15,7 +15,7 @@ function addToCart(item) {
  //random number 1 - 100
  var price = Math.floor(Math.random() * 99) + 1;
 
- Object.assign(items, {itemName: "${item}"}, {itemPrice: "${price}"});
+ Object.assign(items, {itemName: item}, {itemPrice: "${price}"});
  cart.push(items);
 }
 
