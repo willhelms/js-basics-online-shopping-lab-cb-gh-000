@@ -11,7 +11,9 @@ function setCart(c) {
 
 function addToCart(item) {
  // write your code here
- cart.push(item);
+ var items = {};
+ var price = Math.floor(Math.random() * 10) + 1;
+ items.assign(items, { "itemName : ${item}, itemPrice: ${price}"});
 }
 
 function viewCart() {
